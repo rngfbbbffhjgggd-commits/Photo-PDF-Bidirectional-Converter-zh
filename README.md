@@ -2,6 +2,8 @@
 
 # 📄 图片转高质量 PDF · 汉化版
 
+<img src="assets/app_preview.png" width="110" alt="图标" />
+
 ### 把一堆图片，一键变成漂亮的 PDF。
 
 > 🌏 **中文界面 · 开箱即用**
