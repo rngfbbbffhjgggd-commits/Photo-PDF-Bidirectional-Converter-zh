@@ -1,43 +1,86 @@
-# 图片转高质量 PDF（汉化版）
+<div align="center">
 
-一个 Windows 桌面应用：把图片转成 PDF，也能把 PDF 页面转回图片。
-本仓库是 **SagarBiswas-MultiHAT/Photo-PDF-Bidirectional-Converter** 的**汉化版**，
-界面已全部翻译为中文，转换逻辑保持原样。原项目为 MIT 协议，版权归原作者所有。
+# 📄 图片转高质量 PDF · 汉化版
 
-## 功能
+### 把一堆图片，一键变成漂亮的 PDF。
 
-- **图片 → PDF**
-  - **合并为单个 PDF（多页）**：所有图片合成一个 PDF，每张一页。
-  - **每张图片单独一个 PDF**：每张图片各自生成一个 PDF。
-  - 批量选择、排序（上移/下移）、按名称排序、移除、清空。
-  - 质量与页面尺寸：自动/手动 DPI、按像素、A4/Letter、边距、嵌入方式、JPEG 质量。
-  - 按 EXIF 自动旋转、可写入 PDF 元数据（标题/作者）。
-- **PDF → 图片**：把 PDF 每页导出为 PNG 或 JPG，可设渲染 DPI。
+> 🌏 **中文界面 · 开箱即用**
+> 既能**把所有图片合并成一个 PDF**，也能**每张图片各自成一个 PDF**，还能把 **PDF 翻回图片**。
 
-## 界面语言
+</div>
 
-中文（本汉化版）。
+---
 
-## 运行环境
+## ✨ 为什么值得用
 
-- Windows
-- Python 3.8+
-- 依赖：`Pillow`、`reportlab`、`img2pdf`、`PyMuPDF`
+| 你想做的事 | 它都能做 |
+|---|---|
+| 两张证书/合同/文档图，合成一个 PDF | ✅ 合并为单个 PDF（多页） |
+| 一批照片，每张单独出一个 PDF | ✅ 每张图片单独一个 PDF |
+| 批量选图、排序、改质量 | ✅ 批量 + 上移/下移/按名称排序 |
+| 要把 PDF 每页拿回成图片 | ✅ PDF → PNG / JPG |
 
-## 运行方式
+- **无损高质量**：默认走 `img2pdf`，保持原图编码，不二次压缩；也能选高质量 JPEG / 无损 PNG。
+- **本地运行，不上传**：所有处理都在你电脑上完成，隐私放心。
+- **中文界面**：按钮、选项、状态提示全部中文，一看就会。
+
+---
+
+## 🖼️ 支持的图片格式
+
+PNG · JPG/JPEG · BMP · GIF · TIF/TIFF · WEBP
+
+---
+
+## 🚀 快速开始
+
+需要 **Windows** 和 **Python 3.8+**。
 
 ```powershell
-# 创建虚拟环境并安装依赖（首次）
+# 1) 创建虚拟环境并安装依赖（首次）
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
-# 启动应用
+# 2) 启动应用
 .\.venv\Scripts\python.exe Photo-PDF-Bidirectional-Converter.py
 ```
 
-Windows 下也可直接双击项目里的 `启动.bat`。
+> Windows 下也可直接双击项目里的 **`启动.bat`**。
 
-## 致谢
+---
 
-- 原作者 & 原项目：[SagarBiswas-MultiHAT/Photo-PDF-Bidirectional-Converter](https://github.com/SagarBiswas-MultiHAT/Photo-PDF-Bidirectional-Converter)
-- 协议：MIT（详见 `LICENSE`）
+## 🧭 使用步骤
+
+1. 点 **添加…**，选择一张或多张图片。
+2. 在右侧选择导出方式：
+   - **合并为单个 PDF（多页）** → 选一个输出文件。
+   - **每张图片单独一个 PDF** → 选一个输出文件夹。
+3. （可选）调整页面尺寸、DPI、边距、嵌入方式、JPEG 质量。
+4. 点 **转换**，完成。
+
+---
+
+## 🙏 致谢与版权
+
+本项目是 **[SagarBiswas-MultiHAT/Photo-PDF-Bidirectional-Converter](https://github.com/SagarBiswas-MultiHAT/Photo-PDF-Bidirectional-Converter)** 的**中文汉化版**。
+
+- **原作者**：Sagar Biswas
+- **原项目**：<https://github.com/SagarBiswas-MultiHAT/Photo-PDF-Bidirectional-Converter>
+- **协议**：MIT（详见 `LICENSE`）
+
+转换逻辑、功能与质量完全保留自原项目；**此仓库所做的修改仅为界面中文化与本地启动脚本**。
+如果你觉得有用，欢迎去给**原项目**点个 ⭐ 支持原作者。
+
+---
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+&nbsp;
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+&nbsp;
+[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)]()
+&nbsp;
+[![Status](https://img.shields.io/badge/status-%E6%B1%89%E5%8C%96%E7%89%88-orange)]()
+
+</div>
